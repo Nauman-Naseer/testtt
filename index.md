@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+# 3D-RelNet: Joint Object and Relation Network for 3D prediction
+Nilesh Kulkarni, Ishan Misra, Shubham Tulsiani, Abhinav Gupta.
 
-You can use the [editor on GitHub](https://github.com/Nauman-Naseer/testtt/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+[Project Page](https://nileshkulkarni.github.io/relative3d/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Teaser Image](https://nileshkulkarni.github.io/relative3d/resources/images/teaser.png)
 
-### Markdown
+## Demo and Pre-trained Models
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Please check out the [interactive notebook suncg](demo/demo_suncg.ipynb), [interactive notebook nyu](demo/demo_nyu.ipynb) which shows reconstructions using the learned models. To run this, you'll first need to follow the [installation instructions](docs/installation.md) to download trained models and some pre-requisites.
 
-```markdown
-Syntax highlighted code block
+## Training and Evaluating
+To train or evaluate the (trained/downloaded) models, it is first required to [download the SUNCG dataset](https://github.com/shubhtuls/factored3d/blob/master/docs/suncg_data.md) and [preprocess the data](https://github.com/shubhtuls/factored3d/blob/master/docs/preprocessing.md) and download the splits [here](https://www.dropbox.com/s/tomlyczen5ktyva/suncg_splits.tar.gz?dl=0). Please see the detailed README files for [Training](docs/training.md) or [Evaluation](docs/evaluation.md) of models for subsequent instructions.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+To train or evaluate on the NYUv2 dataset the (trained/downloaded) models, it is first required to [download the NYU dataset](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) and [preprocess the data](docs/nyu_preprocessing.md) and download the splits [here](https://www.dropbox.com/s/mhvu39z1rhqmfox/nyu_splits.tar.gz?dl=0). Please see the detailed README files for [Training](docs/training.md) or [Evaluation](docs/evaluation.md) of models for subsequent instructions.
+### Citation
+If you use this code for your research, please consider citing:
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Nauman-Naseer/testtt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+@article{kulkarni2019relnet,
+  title={3D-RelNet: Joint Object and Relational Network for 3D Prediction},
+  author={Nilesh Kulkarni, Ishan Misra, Shubham Tulsiani, Abhinav Gupta},
+  journal={arXiv preprint arXiv:1906.02729},
+  year={2019}
+}
+```
